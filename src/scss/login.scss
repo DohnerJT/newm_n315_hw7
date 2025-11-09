@@ -1,0 +1,108 @@
+
+
+.page_login{
+    background-color: #FFD972;
+}
+
+
+#loginBody{
+    
+    display: flex;
+    justify-content: space-evenly;
+    gap: 250px;
+    
+    align-items: center;
+    height: auto;     width: 100%;
+    
+    .submite_Btm{
+        height: 52px;   width: 100%;
+        border-radius: 25px;
+        border: none;
+        box-shadow: 0px 10px 10px rgb(0 0 0 / .25);
+        background-color: #FFD972;
+        font-size: 25px;
+        font-family: "cavReg";
+    }
+
+    input{
+        height: 15px;    width: 100%;
+        margin-bottom: 52px;
+        outline: none;
+        background-color: #FFD972;
+        border: none;
+        border-bottom: 3px solid black;
+
+    }
+
+    input::placeholder{
+        font-size: 12px;
+        color: black;
+        font-family: "latoReg";
+    }
+
+    #loginBlock{
+        width: 207px;
+        
+        
+        h2{
+            font-size: 30px;
+            font-family: "latoReg";
+            font-weight: normal;
+            margin-bottom: 60px;
+        }
+
+        #login_Fail{
+            display: none;
+            color: red;
+            font-family: "latoReg";
+        }
+
+
+    }
+    
+    #signUpBlock{
+        width: 207px;
+        h3{
+            font-size: 12px;
+            font-family: "latoItal";
+            font-weight: normal;
+            margin-bottom: 0px;
+            
+        }
+        h2{
+            font-size: 30px;
+            font-family: "latoReg";
+            font-weight: normal;
+            margin-bottom: 60px;
+
+        }
+
+        #field_fail{
+            margin-bottom: 10px;
+            display: none;
+
+            li{
+                color: red;
+                font-size: 13px;
+                 font-family: "latoReg";
+            }
+        }
+
+    }
+}
+
+@media (max-width: 980px) {
+    #loginBody{
+        flex-direction: column;
+    }
+    #signUpBlock{
+       margin-bottom: 173px;
+    }
+}
+
+@media (max-width: 700px) {
+     #signUpBlock{
+        margin-bottom: 173px;
+     }
+
+}

@@ -1,0 +1,318 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+html, body {
+    
+ height: 100%;
+ 
+}
+h1, h2, h3, h4, h5, h6, p {
+ margin-bottom: 16px;
+}
+
+
+
+#mainBody{
+    min-height: 100%;       
+    width: 100%;
+    position: relative;
+
+   
+    
+    nav{
+
+        
+        height: 95px;       width: 100%;
+        display: flex;
+
+        #logoBox{
+            flex-shrink: 0;
+            height: 55px;       width: 217px;
+            margin: 38px auto auto 58px;
+            background-image: url(../images/logoA.png);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        #linkBox_desktop{
+            display: flex;
+            margin-bottom: 0;       margin-top: auto;       margin-right: 50px;
+
+            a{
+                font-size: 25px;    
+                font-family: "cavReg";
+                color: black;
+                text-decoration: none;
+
+                margin-left: 15px;
+                
+                #loginButton{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 52px;       width: 158px;
+                    background-color: #FFD972;
+                    border-radius: 30px;
+                    box-shadow: 0px 10px 10px rgb(0 0 0 / .25);
+                }
+
+                .selected{
+                    width: 80%;
+                    border-bottom: 4px solid black;
+                }
+            }
+        }
+
+        #linkBox_mobil{
+            display: none;
+            flex-shrink: 0;
+
+            height: 25px;       width: 32px;
+            background-image: url(../images/icon/menu_icon.png);
+            
+            background-position: center;
+            background-size: cover;
+            margin: 45.5px 38px auto auto;
+        }
+    }
+
+    #contentBody{
+        min-height: 80%;   width: 100%;
+        margin-top: 100px;
+    }
+
+    footer{
+
+        position: absolute;
+        bottom: 0;
+        height: 44px;       width: 100%;
+      
+
+        #footer_desktop{
+            // display: none;
+            display: flex;
+            justify-content: space-between;
+            height: 100%;       width: 100%;
+
+            #copyRight{
+            font-size: 15px;
+            font-weight: lighter;
+            font-family: "latoItal";
+            color: #393939;
+            margin-left: 40px;
+            }
+
+            #footerLinks{
+
+                display: flex;
+                justify-content: space-between;
+                gap: 18px;
+                a{
+
+                    font-size: 15px;
+                    text-decoration: none;
+                    font-family: "latoItal";
+                    color: #393939;
+                }
+            }
+
+            #footerLinks_mobile{
+                display: flex;
+                justify-content: space-between;
+                gap: 18px;
+                a{
+
+                    font-size: 15px;
+                    text-decoration: none;
+                    font-family: "latoItal";
+                    color: #393939;
+                }
+
+            }
+
+            #socialMedia{
+                display: flex;
+                justify-content: space-between;
+                gap: 40px;
+                margin-right: 40px;
+                a{
+                    img{
+                        height: 19px;
+                        aspect-ratio: 1 1;
+                    }
+                }
+            }
+        }
+        
+        #footer_mobile{
+            display: none;
+            height: 100%;       width: 318px;
+            margin: 0 auto auto auto;
+
+            #footer_topBar{
+
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+
+                #copyRight{
+                    margin-left: 0;
+                    font-size: 10px;
+                }
+                #socialMedia{
+                    margin-right: 0;
+                    font-size: 10px;
+                }
+            }
+
+            #footerLinks{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+
+    }
+    
+}
+
+#menu_mobile{
+    position: absolute;
+    display: none;
+
+    background-color: white;
+    height: 150px;      width: 140px;
+    top: 72px;     right: 38px;
+
+    
+    border: 5px solid black;
+    border-radius: 5px;
+    
+    #links_mobile{
+        display: flex;
+        flex-direction: column;
+        a{
+            text-decoration: none;
+            font-size: 20px;
+            text-indent: 10px;
+            height: 30px;
+            border-bottom: 2px solid black;
+            color: black;
+            
+        }
+    }
+
+}
+
+
+// Tablet Display
+@media (max-width: 980px) {
+    
+    #mainBody{
+
+        nav{
+
+        #logoBox{
+            height: 47px;
+            margin: 38px auto auto 38px;
+        }
+
+        #linkBox_desktop{
+            display: none;
+        }
+
+        #linkBox_mobil{
+            display: inline;
+        }
+
+        }
+
+        footer{
+        
+        #copyRight{
+            font-size: 10px;
+            font-family: "latoItal";
+            color: #393939;
+            margin-left: 40px;
+        }
+        
+        #footerLinks{
+        
+            display: flex;
+            justify-content: space-between;
+            gap: 18px;
+            a{
+                font-size: 10px;
+                text-decoration: none;
+                font-family: "latoItal";
+                color: #393939;
+            }
+        }
+        
+        #footerLinks_mobile{
+            display: flex;
+            justify-content: space-between;
+            gap: 18px;
+            a{
+                font-size: 10px;
+                text-decoration: none;
+                font-family: "latoItal";
+                color: #393939;
+            }
+        }
+
+        #socialMedia{
+            display: flex;
+            justify-content: space-between;
+            gap: 20.5px;
+            margin-right: 40px;
+            a{
+                img{
+                    height: 19px;
+                    aspect-ratio: 1 1;
+                }
+            }
+        }
+        }
+    }
+    }
+    
+
+//Mobile Display
+@media (max-width: 700px) {
+    
+    #mainBody{
+
+        nav{
+
+        #logoBox{
+            height: 47px;
+            margin: 30px auto auto 30px;
+        }
+
+        #linkBox_desktop{
+            display: none;
+        }
+
+        #linkBox_mobil{
+            display: block;
+        }
+
+        }
+
+        footer{
+            height: 92px;
+            
+            #footer_desktop{
+                display: none;
+            }
+            #footer_mobile{
+                display: block;
+            }
+        }
+    }
+    
+}

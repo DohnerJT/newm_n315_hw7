@@ -1,0 +1,99 @@
+
+
+.page_home{
+
+    background-image: linear-gradient(
+        rgba(242, 92, 84, .5),
+        rgba(242, 92, 84, .5)),
+        url(../images/hero.jpg);
+    background-position: center;
+    background-size: cover;
+
+    #homeBody{
+        // border: 2px solid green;
+        position: relative;
+        height: 401.9px;   width: 441.9px;
+        margin-left: auto;  margin-right: auto;
+
+        #bigCircle{
+            
+            height: 357.5px;   width: 357.5px;
+
+            position: absolute;
+            bottom: 0;
+            z-index: 10;
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            background-color: #FFD972;
+            border-radius: 50%;
+            
+            h2{
+                font-size: 24px;
+                font-family: "cavBol";
+            }
+
+            
+            #titleText{
+                
+                display: flex;
+                height: auto;   width: 164px;
+                text-align: center;
+                bottom: 97px;
+                
+                font-size: 13px;
+                font-family: "latoReg";
+            }
+        }
+        
+        
+        #smallCircle{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            position: absolute;
+            right: 0;
+            height: 168px;   width: 168px;
+            background-color: #FCBCB8;
+            border-radius: 50%;
+
+            p{
+                height: auto;   width: 106px;
+                text-align: center;
+                font-size: 10px;
+                font-family: "latoItal";
+            }
+        }
+    }
+}
+
+@media (max-width: 700px){
+    .page_home{
+        #homeBody{
+            height: 327px;   width: 258px;
+            #bigCircle{
+                height: 257px;   width: 257px;
+                h2{
+                    font-size: 17px;
+                }
+                
+                #titleText{
+                    height: auto;   width: 114px;
+                    font-size: 9px;
+                }
+            }
+            
+            #smallCircle{
+                height: 121px;   width: 121px;
+                p{
+                    height: auto;   width: 82px;
+                    font-size: 9px;
+                }
+            }
+        }
+    }
+}
