@@ -1,5 +1,6 @@
+import "../scss/styles.scss"
 import {PageSet, FillNav, FillFooter} from "../model/model.js"
-import {UserLogin, UserSignUp, LogOut} from "../lib/user.js"
+import {UserLogin, UserSignUp, LogOut} from "../app/user.js"
 
 
 //Holds the loged in Users information

@@ -1,6 +1,6 @@
 
 import {user}from "../app/app.js"
-import{LogOut} from "../lib/user.js"
+import{LogOut} from "../app/user.js"
 
 export function PageSet(){
 
@@ -57,7 +57,7 @@ export function PageSet(){
 function FillPage(hash) {
 
     //Grab and load page contents
-    let pageBody = `src/pages/${hash}.html`
+    let pageBody = `pages/${hash}.html`
     let parent = "#contentBody"
     console.log(hash)
     
@@ -79,8 +79,8 @@ export function FillNav(type) {
     let desktop = "#linkBox_desktop"
     let mobile = "#links_mobile"
 
-    let desktopContent = `src/pages/nav_${type}_desktop.html`
-    let mobileContent = `src/pages/nav_${type}.html`
+    let desktopContent = `pages/nav_${type}_desktop.html`
+    let mobileContent = `pages/nav_${type}.html`
 
     $.get(desktopContent, function(data){
         //Ensure element is empty
@@ -112,8 +112,8 @@ export function FillFooter(type) {
     let desktop = "#footerLinks"
     let mobile = "#footerLinks_mobile"
 
-    let desktopContent = `src/pages/footer_${type}_desktop.html`
-    let mobileContent = `src/pages/footer_${type}.html`
+    let desktopContent = `pages/footer_${type}_desktop.html`
+    let mobileContent = `pages/footer_${type}.html`
 
     $.get(desktopContent, function(data){
         //Ensure element is empty
