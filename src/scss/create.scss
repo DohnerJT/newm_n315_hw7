@@ -1,5 +1,205 @@
 
+h1{
+    font-family: "cavReg";
+    font-size: 25px;
+    margin-left: 7.5%;
+    margin-bottom: 0;
+    color: black;
+}
 
-.create_login{
-    background-color: #FFD972;
+form{
+    // border: 1px solid black;
+    width: 85%;
+    margin: 40px auto 100px auto;
+
+    fieldset{
+    margin-bottom: 120px;       
+    position: relative; 
+    border: none;
+        input{
+                width: 100%;
+                margin-top: 75px;
+                border: none;
+                border-bottom: 3px solid black;
+                
+                font-size: 20px;
+                color: black;
+                font-family: "latoLite";
+
+            }
+
+            .addBtn{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                position: absolute;
+                bottom: 5px;
+                right: 0;
+                width: 38px;
+                height: 38px;
+                background-color: #EFA7A7;
+                border: none;
+                border-radius: 50%;
+                color: white;
+                font-size: 40px;
+                text-align: center;
+                
+                
+            }
+            
+            .fileBtn{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                width: 110px;
+                height: 38px;
+                
+                position: absolute;
+                top: 55px;
+                right: 0;
+                
+                background-color: #EFA7A7;
+                border: none;
+                border-radius: 19px;
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+                font-size: 17px;
+                font-family: "cavReg";
+                text-align: center;
+                
+                
+            }
+    }
+
+    button{
+        display: block;
+        margin: 0 auto;
+        width: 422px;
+        height: 52px;
+        border: none;
+        background-color: #EFA7A7;
+        border-radius: 25px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+        color: black;
+        font-size: 25px;
+        font-family: "cavReg";
+    }
+}
+
+@media (max-width: 980px) {
+    
+    h1{
+    font-family: "cavReg";
+    font-size: 25px;
+    margin-left: 7.5%;
+    margin-bottom: 0;
+    color: black;
+}
+
+form{
+    // border: 1px solid black;
+    width: 85%;
+    margin: 40px auto 100px auto;
+
+    fieldset{
+    margin-bottom: 120px;       
+    position: relative; 
+    border: none;
+        input{
+                width: 100%;
+                margin-top: 75px;
+                border: none;
+                border-bottom: 3px solid black;
+                
+                font-size: 20px;
+                color: black;
+                font-family: "latoLite";
+
+            }
+
+            .addBtn{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                position: absolute;
+                bottom: 5px;
+                right: 0;
+                width: 38px;
+                height: 38px;
+                background-color: #EFA7A7;
+                border: none;
+                border-radius: 50%;
+                color: white;
+                font-size: 40px;
+                text-align: center;
+                
+                
+            }
+            
+            .fileBtn{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                width: 110px;
+                height: 38px;
+                
+                position: absolute;
+                top: 55px;
+                right: 0;
+                
+                background-color: #EFA7A7;
+                border: none;
+                border-radius: 19px;
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+                font-size: 17px;
+                font-family: "cavReg";
+                text-align: center;
+                
+                
+            }
+    }
+
+    button{
+        display: block;
+        margin: 0 auto;
+        width: 354px;
+        height: 52px;
+        border: none;
+        background-color: #EFA7A7;
+        border-radius: 25px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+        color: black;
+        font-size: 25px;
+        font-family: "cavReg";
+    }
+}
+
+    }
+    
+
+//Mobile Display
+@media (max-width: 700px) {
+ 
+
+
+form{
+
+    button{
+        display: block;
+        margin: 0 auto;
+        width: 283px;
+        height: 52px;
+        border: none;
+        background-color: #EFA7A7;
+        border-radius: 25px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+        color: black;
+        font-size: 20px;
+        font-family: "cavReg";
+    }
+}
+    
 }

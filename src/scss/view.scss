@@ -1,0 +1,317 @@
+
+.infoCard {
+    width: 85%;
+    margin: auto;
+    // display: flow-root;
+    .sectionTitle{
+        margin-top: 58px;
+        margin-bottom: 35px;
+        font-family: "cavReg";
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    .discriptionCard{
+        display: flex;
+        gap: 45px;
+        width: 100%;
+
+        .imagCard{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            width: 512px;
+            
+            .view_titleBar{
+                writing-mode: vertical-lr;
+                width: 30px;
+                text-orientation: mixed;
+                font-family: "latoBol";
+                font-size: 25px;
+                
+            }
+            
+            .view_titleImg{
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: 468px;
+                height: 421px;  
+            }
+        }
+        
+        .detailCard{
+            width: 45%;
+
+            h2{
+                margin-bottom: 25px;
+                font-weight: lighter;
+                font-family: "latoReg";
+                font-size: 25px;
+            }
+
+            h3{
+                margin-top: 38px;
+                margin-bottom: 38px;
+                font-weight: lighter;
+                font-family: "latoReg";
+                font-size: 20px;
+            }
+
+            p{
+                font-family: "cavReg";
+                font-size: 20px;
+            }
+        }
+        
+    }
+    
+    .ingredientsCard {
+        width: 100%;
+        
+    }
+    
+    .instructionsCard{
+        width: 100%;
+        li{
+            list-style-type: decimal;
+        }
+        
+    }
+    
+    .buttonsCard {
+        width: 100%;
+        margin-top: 60px;
+        margin-bottom: 150px;
+        
+
+        button{
+            width: 128px;
+            height: 42px;   
+            border: none;
+            border-radius: 23px;
+            background-color: #FFD972;
+            font-family: "cavReg";
+            font-size: 20px;
+        }
+    }
+}
+
+@media (max-width: 980px) {
+    
+    .infoCard {
+        width: 85%;
+        margin: auto;
+    // display: flow-root;
+    .sectionTitle{
+        margin-top: 58px;
+        margin-bottom: 35px;
+        margin-left: 20%;
+        font-family: "cavReg";
+        font-size: 25px;
+        // margin-bottom: 10px;
+    }
+
+    .discriptionCard{
+        flex-direction: column;
+        margin-left: 20%;
+        gap: 45px;
+        width: 100%;
+
+        .imagCard{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            width: 468px;   height: 421px;
+            
+            .view_titleBar{
+                writing-mode: vertical-lr;
+                width: 30px;
+                text-orientation: mixed;
+                font-family: "latoBol";
+                font-size: 25px;
+                
+            }
+            
+            .view_titleImg{
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: 468px;
+                height: 421px;  
+            }
+        }
+        
+        .detailCard{
+            width: 45%;
+
+            h2{
+                margin-bottom: 25px;
+                font-weight: lighter;
+                font-family: "latoReg";
+                font-size: 25px;
+            }
+
+            h3{
+                margin-top: 38px;
+                margin-bottom: 38px;
+                font-weight: lighter;
+                font-family: "latoReg";
+                font-size: 20px;
+            }
+
+            p{
+                font-family: "cavReg";
+                font-size: 20px;
+            }
+        }
+        
+    }
+    
+    .ingredientsCard {
+        margin-left: 20%;
+        width: 80%;
+        
+    }
+    
+    .instructionsCard{
+        margin-left: 20%;
+        width: 80%;
+        li{
+            list-style-type: decimal;
+        }
+        
+    }
+    
+    .buttonsCard {
+        width: 100%;
+        margin-top: 60px;
+        
+
+        button{
+            width: 128px;
+            height: 42px;   
+            border: none;
+            border-radius: 23px;
+            background-color: #FFD972;
+            font-family: "cavReg";
+            font-size: 20px;
+        }
+    }
+    }
+}
+    
+
+    
+
+//Mobile Display
+@media (max-width: 700px) {
+ 
+    .infoCard {
+  
+        width: 85%;
+        margin: auto;
+    // display: flow-root;
+    .sectionTitle{
+        margin-top: 43px;
+        margin-bottom: 15px;
+        margin-left: 20%;
+        font-family: "cavReg";
+        font-size: 20px;
+        // margin-bottom: 10px;
+    }
+
+    .discriptionCard{
+        
+        gap: 45px;
+        width: 100%;
+
+        .imagCard{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            width: 252px;   height: 252px;
+            
+            .view_titleBar{
+                writing-mode: vertical-lr;
+                width: 30px;
+                text-orientation: mixed;
+                font-family: "latoBol";
+                font-size: 20px;
+                
+            }
+            
+            .view_titleImg{
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: 251px;
+                height: 251px;  
+            }
+        }
+        
+        .detailCard{
+            width: 45%;
+
+            h2{
+                margin-bottom: 15px;
+                font-weight: lighter;
+                font-family: "latoReg";
+                font-size: 20px;
+            }
+
+            h3{
+                margin-top: 38px;
+                margin-bottom: 13px;
+                font-weight: lighter;
+                font-family: "latoReg";
+                font-size: 20px;
+            }
+
+            p{
+                font-family: "cavReg";
+                font-size: 16px;
+            }
+        }
+        
+    }
+    
+    .ingredientsCard {
+        margin-left: 20%;
+        width: 80%;
+        
+    }
+    
+    .instructionsCard{
+        margin-left: 20%;
+        width: 80%;
+        li{
+            list-style-type: decimal;
+        }
+        
+    }
+    
+    .buttonsCard {
+        width: 100%;
+        margin-top: 60px;
+        
+
+        button{
+            width: 128px;
+            height: 42px;   
+            border: none;
+            border-radius: 23px;
+            background-color: #FFD972;
+            font-family: "cavReg";
+            font-size: 20px;
+        }
+    }
+    }
+    
+}

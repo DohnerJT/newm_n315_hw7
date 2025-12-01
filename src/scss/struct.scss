@@ -16,8 +16,10 @@ h1, h2, h3, h4, h5, h6, p {
 
 #mainBody{
     min-height: 100%;       
-    width: 100%;
+    width: 100%;    min-height: 100%;
+    display: flow-root;
     position: relative;
+    
 
    
     
@@ -82,6 +84,8 @@ h1, h2, h3, h4, h5, h6, p {
     #contentBody{
         min-height: 80%;   width: 100%;
         margin-top: 100px;
+        display: flow-root;
+
     }
 
     footer{

@@ -1,5 +1,166 @@
 
 
 .page_browse{
-    background-color: #A7E8BD;
+     background-color: #A7E8BD;
+    background-image: linear-gradient(
+        rgba(167, 232, 189, .8),
+        rgba(167, 232, 189, .8)),
+        url(../images/recipe-hero.jpg);
+        background-position: center;
+        background-size: cover;
 }
+
+
+        .recipe_palet{
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+            gap: 50px;
+            
+            width: 85%;
+            margin: 50px auto;
+
+            .recipe_card{
+                display: flex;
+                flex-direction: row;
+
+                .recipe_img{
+                    width: 300px; height: 263px;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-position: center;
+                    background-size: cover;
+
+                    border-radius: 24px;
+
+
+                }
+
+                .recipe_info{
+                    width: 224px; height: 263px;
+                    background-color: white;
+                    border-radius: 24px;
+
+                    h2{
+                        width: 140px;
+                        margin-left: 45px;
+                        margin-top: 40px;
+                        font-family: "latoReg";
+                        font-size: 15px;
+                        border-bottom: 3px solid black;
+                    }
+                    
+                    p{
+                        width: 140px;
+                        margin-left: 45px;
+                        font-family: "latoReg";
+                        font-size: 9px;
+                    }
+
+                    .recipe_time{
+                        margin-left: 71px;
+                        img{
+                            width: 23px; height: 23px;
+                            // margin-left: 45px;
+                            margin-top: 20px;
+                        }
+                        span{
+                            font-family: "latoReg";
+                            font-size: 10px;
+                            margin-left: 17px;
+                            margin: auto auto auto 17px;
+                        }
+                    }
+                    
+                    .recipe_serv{
+                        margin-left: 71px;
+                        img{
+                            width: 23px; height: 23px;
+                            // margin-left: 45px;
+                            margin-top: 20px;
+                        }
+                        span{
+                            font-family: "latoReg";
+                            font-size: 10px;
+                            margin-left: 17px;
+                            margin: auto auto auto 17px;
+                        }
+                    }
+                }
+            }
+
+        }
+    
+
+@media (max-width: 980px) {
+}
+    
+
+//Mobile Display
+@media (max-width: 700px) {
+ 
+    .recipe_palet{
+
+            .recipe_card{
+                flex-direction: column;
+                .recipe_img{
+                    height: 150px;
+                }
+
+                .recipe_info{                    
+                    width: 298px;   height: 170px;
+                    h2{
+                        width: 87px;
+                        margin-top: 13px;
+                        margin-left: auto;   margin-right: auto;
+                        font-size: 10px;
+                    }
+                    
+                    p{
+                        width: 70%;
+                        margin-left: auto;   margin-right: auto;
+                        font-size: 8px;
+                        
+                    }
+
+                    .recipe_time{
+                        height: 23px;
+                        margin-bottom: 15px;
+                        img{
+                            margin-top: 0px;    margin-bottom: 0px;
+                            margin-left: auto;   
+                            width: 22px; height: 22px;
+                        }
+                        span{
+                            margin-top: 0px;    margin-bottom: 0px;
+                            margin-right: auto;
+                            font-size: 8px;
+                            margin-left: 10px;
+                        }
+                    }
+                    
+                    .recipe_serv{
+                        height: 23px;
+                        
+                        img{
+                            margin-left: auto;   
+                            margin-top: 0px;    margin-bottom: 0px;
+                            width: 22px; height: 22px;
+                        }
+                        span{
+                            margin-top: 0px;    margin-bottom: 0px;
+                            margin-right: auto;
+                            font-size: 8px;
+                            margin-left: 10px;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+    

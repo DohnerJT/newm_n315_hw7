@@ -1,11 +1,14 @@
 import "../scss/styles.scss"
 import {PageSet, FillNav, FillFooter} from "../model/model.js"
-import {UserLogin, UserSignUp, LogOut} from "../app/user.js"
+import {UserLogin, UserSignUp, LogOut, CheckLoginState} from "../app/user.js"
+import {AddBaseRecipes} from "../app/userData.js"
 
 
 //Holds the loged in Users information
 //Will be null when no user is loged in
 export let user = null
+
+
 
 function initListeners() {
     
@@ -37,10 +40,10 @@ export function UserState(userIn) {
 
 $(document).ready(function () {
     
+    AddBaseRecipes()
 
-    LogOut()
-
-    //Inital Seting of nave and footer
+    
+    //Inital Seting of nav and footer
     let state
     if(user){
         state = "logedin"
